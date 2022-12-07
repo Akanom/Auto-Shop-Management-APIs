@@ -11,7 +11,7 @@ var(
 
 
 func Connect(){
-	d, err:= gorm.Open("mysql","autoshop:auto1010/simplerest?charset=utf8&parseTime=True&loc=Local")
+	d, err:= gorm.Open("mysql","autoshop:password@(localhost:3306)/autoshopdb?charset=utf8&parseTime=True&loc=Local")
 	if err!=nil{
 		panic(err)
 	}
